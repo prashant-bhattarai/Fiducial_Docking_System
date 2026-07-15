@@ -1,0 +1,10 @@
+^E:\SOFTWARE_PROJECTS\CV_01_ARUCO_DOCKING\BUILD\CMAKEFILES\C3B158EA2408467389AEF00ABD8FD342\GENERATE.STAMP.RULE
+setlocal
+E:\System_Installers\bin\cmake.exe -SE:/Software_Projects/CV_01_ArUco_Docking -BE:/Software_Projects/CV_01_ArUco_Docking/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/Software_Projects/CV_01_ArUco_Docking/build/ArUcoDocking.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
